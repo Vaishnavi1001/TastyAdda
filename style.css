@@ -942,3 +942,9 @@ a { text-decoration: none; }
   font-size: 13px;
   color: white;
 }
+/* logo */
+img.footer-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 40%;
+}
