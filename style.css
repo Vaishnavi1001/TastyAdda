@@ -8,7 +8,7 @@
   --primary-red: #FF4D4D;
   --white: #FFFFFF;
   --dark: #1F1F1F;
-  --light-bg: #F8F8F8;
+  --light-bg: #d0cfcf;
   --transition: 0.3s ease;
 }
 
@@ -398,13 +398,13 @@ a { text-decoration: none; }
 
 /* Menu Modal */
 .menu-modal-content {
-  background: var(--dark);
+  background: var(--white);
   color: var(--white);
   border-radius: 16px;
   border: none;
 }
 .menu-modal-header {
-  background: var(--dark);
+  background: var(--white);
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding: 16px 24px;
 }
@@ -415,7 +415,7 @@ a { text-decoration: none; }
 }
 
 .menu-item-card {
-  background: rgba(255,255,255,0.06);
+  background: rgba(22, 21, 21, 0.06);
   border-radius: 12px;
   overflow: hidden;
   transition: transform var(--transition);
@@ -437,7 +437,7 @@ a { text-decoration: none; }
 /* ===== OFFERS SECTION ===== */
 .offers-section {
   padding: 100px 0;
-  background: #FFF8F0;
+  background: #f6cea2;
 }
 
 .offers-main-video {
@@ -453,7 +453,6 @@ a { text-decoration: none; }
 }
 .offers-main-fallback {
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, #1f0a00, #ff7a00);
   z-index: 0;
 }
 .offers-main-overlay {
@@ -610,6 +609,7 @@ a { text-decoration: none; }
   padding: 100px 0;
   background: var(--light-bg);
 }
+
 
 .reviews-slider-wrapper {
   position: relative;

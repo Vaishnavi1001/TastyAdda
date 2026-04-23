@@ -90,56 +90,56 @@ const menuData = {
   veg: {
     title: '🥗 Veg Menu',
     items: [
-      { name: 'Paneer Tikka', desc: 'Marinated cottage cheese grilled to perfection', price: '₹149', color: '#4CAF50' },
-      { name: 'Dal Makhani', desc: 'Slow-cooked black lentils in a rich creamy gravy', price: '₹129', color: '#6D4C41' },
-      { name: 'Aloo Paratha', desc: 'Crispy flatbread stuffed with spiced potatoes', price: '₹89', color: '#FF7A00' },
-      { name: 'Veg Biryani', desc: 'Fragrant basmati rice layered with mixed vegetables', price: '₹169', color: '#FFA726' },
-      { name: 'Palak Paneer', desc: 'Creamy spinach curry with soft cottage cheese', price: '₹159', color: '#388E3C' },
-      { name: 'Chole Bhature', desc: 'Fluffy deep-fried bread with spiced chickpeas', price: '₹119', color: '#F57C00' },
+      { name: 'Paneer Tikka', desc: 'Marinated cottage cheese grilled to perfection', price: '₹149', image: './images/menu/paneer_tikka.jpg' },
+      { name: 'Dal Makhani', desc: 'Slow-cooked black lentils in a rich creamy gravy', price: '₹129', image: './images/menu/dalmakhani.jpg' },
+      { name: 'Aloo Paratha', desc: 'Crispy flatbread stuffed with spiced potatoes', price: '₹89', image: './images/menu/aloopratha.jpg' },
+      { name: 'Veg Biryani', desc: 'Fragrant basmati rice layered with mixed vegetables', price: '₹169', image: './images/menu/vegbiryani.jpg' },
+      { name: 'Palak Paneer', desc: 'Creamy spinach curry with soft cottage cheese', price: '₹159', image: './images/menu/palakpaneer.jpg' },
+      { name: 'Chole Bhature', desc: 'Fluffy deep-fried bread with spiced chickpeas', price: '₹119', image: './images/menu/cholebhature.jpg' },
     ]
   },
   nonveg: {
     title: '🍗 Non-Veg Menu',
     items: [
-      { name: 'Chicken Biryani', desc: 'Aromatic basmati with tender chicken pieces', price: '₹219', color: '#FF7A00' },
-      { name: 'Butter Chicken', desc: 'Slow-cooked chicken in a creamy tomato gravy', price: '₹199', color: '#FF4D4D' },
-      { name: 'Chicken Tikka', desc: 'Smoky grilled chicken in aromatic spices', price: '₹179', color: '#BF360C' },
-      { name: 'Mutton Curry', desc: 'Rich and spicy mutton in traditional masala', price: '₹269', color: '#4E342E' },
-      { name: 'Fish Fry', desc: 'Crispy golden fish fillets with mint chutney', price: '₹189', color: '#00695C' },
-      { name: 'Egg Curry', desc: 'Boiled eggs in a tangy onion-tomato gravy', price: '₹129', color: '#F9A825' },
+      { name: 'Chicken Biryani', desc: 'Aromatic basmati with tender chicken pieces', price: '₹219',  image: './images/menu/chickencurry.jpg' },
+      { name: 'Butter Chicken', desc: 'Slow-cooked chicken in a creamy tomato gravy', price: '₹199',  image: './images/menu/butterchicken.jpg' },
+      { name: 'Chicken Tikka', desc: 'Smoky grilled chicken in aromatic spices', price: '₹179',  image: './images/menu/chickentikka.jpg' },
+      { name: 'Mutton Curry', desc: 'Rich and spicy mutton in traditional masala', price: '₹269',  image: './images/menu/muttoncurry.jpg' },
+      { name: 'Fish Fry', desc: 'Crispy golden fish fillets with mint chutney', price: '₹189',  image: './images/menu/fishfry.jpg' },
+      { name: 'Egg Curry', desc: 'Boiled eggs in a tangy onion-tomato gravy', price: '₹129',  image: './images/menu/eggcurry.jpg' },
     ]
   },
   bread: {
     title: '🍞 Bread Menu',
     items: [
-      { name: 'Garlic Naan', desc: 'Soft leavened bread brushed with garlic butter', price: '₹49', color: '#8D6E63' },
-      { name: 'Tandoori Roti', desc: 'Whole wheat flatbread baked in tandoor oven', price: '₹29', color: '#A1887F' },
-      { name: 'Stuffed Paratha', desc: 'Crispy flatbread with a savory stuffing of your choice', price: '₹79', color: '#FF7A00' },
-      { name: 'Puri', desc: 'Deep-fried fluffy puffed bread, golden and crisp', price: '₹39', color: '#FFB300' },
-      { name: 'Missi Roti', desc: 'Spiced gram flour flatbread with herbs', price: '₹45', color: '#6D4C41' },
-      { name: 'Laccha Paratha', desc: 'Layered flaky flatbread cooked in butter', price: '₹59', color: '#8B6914' },
+      { name: 'Garlic Naan', desc: 'Soft leavened bread brushed with garlic butter', price: '₹49',  image: './images/menu/garlicnan.jpg' },
+      { name: 'Tandoori Roti', desc: 'Whole wheat flatbread baked in tandoor oven', price: '₹29',  image: './images/menu/tandooriroti.jpg' },
+      { name: 'Stuffed Paratha', desc: 'Crispy flatbread with a savory stuffing of your choice', price: '₹79',  image: './images/menu/stuffedparatha.jpg' },
+      { name: 'Puri', desc: 'Deep-fried fluffy puffed bread, golden and crisp', price: '₹39',  image: './images/menu/poori.jpg' },
+      { name: 'Missi Roti', desc: 'Spiced gram flour flatbread with herbs', price: '₹45',  image: './images/menu/missiroti.jpg' },
+      { name: 'Laccha Paratha', desc: 'Layered flaky flatbread cooked in butter', price: '₹59',  image: './images/menu/lacchaparatha.jpg' },
     ]
   },
   dessert: {
     title: '🍰 Dessert Menu',
     items: [
-      { name: 'Gulab Jamun', desc: 'Soft milk-solid dumplings soaked in rose syrup', price: '₹69', color: '#FF4D4D' },
-      { name: 'Rasmalai', desc: 'Soft chhena patties in saffron-flavored cream', price: '₹89', color: '#FFB74D' },
-      { name: 'Chocolate Cake', desc: 'Moist dark chocolate sponge with ganache frosting', price: '₹149', color: '#4E342E' },
-      { name: 'Kulfi', desc: 'Traditional dense Indian ice cream in pistachio flavor', price: '₹79', color: '#81C784' },
-      { name: 'Jalebi', desc: 'Crispy spirals soaked in warm sugar syrup', price: '₹59', color: '#FF7A00' },
-      { name: 'Gajar Halwa', desc: 'Slow-cooked carrot pudding with cardamom and nuts', price: '₹99', color: '#EF5350' },
+      { name: 'Gulab Jamun', desc: 'Soft milk-solid dumplings soaked in rose syrup', price: '₹69', image: './images/menu/gulabjamun.jpg' },
+      { name: 'Rasmalai', desc: 'Soft chhena patties in saffron-flavored cream', price: '₹89', image: './images/menu/rasmalai.jpg' },
+      { name: 'Chocolate Cake', desc: 'Moist dark chocolate sponge with ganache frosting', price: '₹149', image: './images/menu/chocolatecake.jpg' },
+      { name: 'Kulfi', desc: 'Traditional dense Indian ice cream in pistachio flavor', price: '₹79', image: './images/menu/kulfi.jpg' },
+      { name: 'Jalebi', desc: 'Crispy spirals soaked in warm sugar syrup', price: '₹59', image: './images/menu/jalebi.jpg' },
+      { name: 'Gajar Halwa', desc: 'Slow-cooked carrot pudding with cardamom and nuts', price: '₹99', image: './images/menu/gajarhalwa.jpg' },
     ]
   },
   drinks: {
     title: '🥤 Drinks Menu',
     items: [
-      { name: 'Mango Lassi', desc: 'Thick chilled yogurt blended with Alphonso mango', price: '₹89', color: '#FF7A00' },
-      { name: 'Masala Chai', desc: 'Spiced milk tea with ginger, cardamom and cloves', price: '₹39', color: '#8B6914' },
-      { name: 'Fresh Lime Soda', desc: 'Chilled fresh lime with sparkling water and mint', price: '₹49', color: '#66BB6A' },
-      { name: 'Cold Coffee', desc: 'Blended iced coffee with milk and sugar', price: '₹79', color: '#5D4037' },
-      { name: 'Strawberry Shake', desc: 'Fresh strawberry milkshake with ice cream', price: '₹99', color: '#FF4D4D' },
-      { name: 'Tender Coconut', desc: 'Fresh tender coconut water, chilled and natural', price: '₹59', color: '#81C784' },
+      { name: 'Mango Lassi', desc: 'Thick chilled yogurt blended with Alphonso mango', price: '₹89', image: './images/menu/mango.jpg' },
+      { name: 'Masala Chai', desc: 'Spiced milk tea with ginger, cardamom and cloves', price: '₹39', image: './images/menu/chai.jpg' },
+      { name: 'Fresh Lime Soda', desc: 'Chilled fresh lime with sparkling water and mint', price: '₹49', image: './images/menu/limesoda.jpg' },
+      { name: 'Cold Coffee', desc: 'Blended iced coffee with milk and sugar', price: '₹79', image: './images/menu/coldcoffee.jpg' },
+      { name: 'Strawberry Shake', desc: 'Fresh strawberry milkshake with ice cream', price: '₹99', image: './images/menu/stawberryshake.jpg' },
+      { name: 'Tender Coconut', desc: 'Fresh tender coconut water, chilled and natural', price: '₹59', image: './images/menu/coconut.jpg' },
     ]
   }
 };
@@ -157,7 +157,7 @@ function openMenuModal(category) {
     col.className = 'col-md-4 col-6';
     col.innerHTML = `
       <div class="menu-item-card">
-        <img src="https://placehold.co/300x160/${item.color.replace('#','')}/FFFFFF?text=${encodeURIComponent(item.name)}" alt="${item.name}"/>
+        <img src="${item.image}" alt="${item.name}"/>
         <div class="menu-item-info">
           <h6>${item.name}</h6>
           <p class="item-desc">${item.desc}</p>
@@ -312,3 +312,8 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     });
   });
 });
+
+
+
+
+
