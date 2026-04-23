@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TastyAdda — Fast. Fresh. Affordable.</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container-fluid px-4">
+
+      <!-- Logo (always visible) -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="./images/logo.png" alt="TastyAdda Logo" class="nav-logo">
+        <span class="brand-text">TastyAdda</span>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" id="hamburgerBtn" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chefs">Chefs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+
+    <!-- Video Slides -->
+    <div class="hero-video-wrapper">
+      <div class="hero-slide active">
+        <video autoplay muted loop playsinline>
+          <source src="./images/home1.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-fallback" style="background: linear-gradient(135deg,#1a0800,#4a1500);"></div>
+      </div>
+      <div class="hero-slide">
+        <video autoplay muted loop playsinline>
+          <source src="./images/home2.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-fallback" style="background: linear-gradient(135deg,#0d0d0d,#2a0a0a);"></div>
+      </div>
+      <div class="hero-slide">
+        <video autoplay muted loop playsinline>
+          <source src="./images/home3.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-fallback" style="background: linear-gradient(135deg,#100800,#3a1a00);"></div>
+      </div>
+      <div class="hero-slide">
+        <video autoplay muted loop playsinline>
+          <source src="./images/home4.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-fallback" style="background: linear-gradient(135deg,#080808,#1f0f00);"></div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Captions -->
+    <div class="hero-captions">
+      <div class="hero-caption active" data-slide="0">
+        <h1>Delicious Food Delivered To Your Door 🍔</h1>
+        <p>Fast. Fresh. Affordable.</p>
+        <a href="#menu" class="btn btn-order">Order Now</a>
+      </div>
+      <div class="hero-caption" data-slide="1">
+        <h1>Taste The Difference Every Bite 🍕</h1>
+        <p>Prepared by top chefs, delivered hot.</p>
+        <a href="#menu" class="btn btn-order">Order Now</a>
+      </div>
+      <div class="hero-caption" data-slide="2">
+        <h1>Best Combos At The Lowest Prices 🥤</h1>
+        <p>Save more, eat better — every day!</p>
+        <a href="#menu" class="btn btn-order">Order Now</a>
+      </div>
+      <div class="hero-caption" data-slide="3">
+        <h1>Your Favorite Restaurant, Now At Home 🍜</h1>
+        <p>Order now and get 20% off your first order!</p>
+        <a href="#menu" class="btn btn-order">Order Now</a>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="hero-dots">
+      <span class="hero-dot active" data-index="0"></span>
+      <span class="hero-dot" data-index="1"></span>
+      <span class="hero-dot" data-index="2"></span>
+      <span class="hero-dot" data-index="3"></span>
+    </div>
+
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left: Text -->
+        <div class="col-md-6">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title orange">Why Choose TastyAdda?</h2>
+          <div class="about-features">
+            <div class="about-feature-item">
+              <i class="fa-solid fa-trophy"></i>
+              <div>
+                <strong>8+ Years of Excellence</strong>
+                <p>Trusted by thousands across the city for over 8 years in the food delivery industry.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-leaf"></i>
+              <div>
+                <strong>Fresh Quality Ingredients</strong>
+                <p>Every meal is prepared fresh using the best quality, hand-picked ingredients.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <strong>Lightning Fast Delivery</strong>
+                <p>We deliver faster than any other food delivery app — hot food at your doorstep.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-tag"></i>
+              <div>
+                <strong>No Hidden Charges</strong>
+                <p>Lower prices, zero platform fees, and complete transparency on every order.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>Hygienic Kitchen</strong>
+                <p>Certified hygienic kitchen with trained, professional staff ensuring food safety.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-calendar-check"></i>
+              <div>
+                <strong>7 Days a Week</strong>
+                <p>Available every day, covering all major areas in the city without fail.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn-primary-orange mt-4">Explore Our Menu <i
+              class="fa-solid fa-arrow-right ms-2"></i></a>
+        </div>
+
+        <!-- Right: Images -->
+        <div class="col-md-6">
+          <div class="about-image-grid">
+            <div class="about-img-wrap">
+              <img src="./images/about1.jpg" alt="Fresh food being prepared" />
+            </div>
+            <div class="about-img-wrap">
+              <img src="./images/about2.jpg" alt="Our hygienic kitchen" />
+            </div>
+            <div class="about-img-wrap">
+              <img src="./images/about3.jpg" alt="Fast food delivery" />
+            </div>
+            <div class="about-img-wrap">
+              <img src="./images/about4.jpg" alt="Best food combos" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">What We Serve</span>
+        <h2 class="section-title">Our <span class="orange">Menu</span></h2>
+        <p class="section-subtitle">Hover over a category to see it come alive</p>
+      </div>
+
+      <div class="menu-cards-row">
+
+        <!-- Card 1: Veg -->
+        <div class="menu-card" data-category="veg">
+          <div class="menu-card-inner">
+            <img src="./images/menu/veg_cover.jpg" alt="Veg food" />
+            <video autoplay muted loop playsinline>
+              <source src="./images/menu/veg_cover1.mp4" type="video/mp4" />
+            </video>
+            <div class="menu-card-overlay">
+              <span class="menu-card-label">Veg</span>
+              <p>Fresh garden vegetables cooked to perfection</p>
+              <button class="btn btn-sm btn-order" onclick="openMenuModal('veg')">View Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Non-Veg -->
+        <div class="menu-card" data-category="nonveg">
+          <div class="menu-card-inner">
+            <img src="./images/menu/nonveg_cover.jpg" alt="Non-Veg food" />
+            <video autoplay muted loop playsinline>
+              <source src="./images/menu/nonveg_cover1.mp4" type="video/mp4" />
+            </video>
+            <div class="menu-card-overlay">
+              <span class="menu-card-label">Non-Veg</span>
+              <p>Tender meats grilled to smoky perfection</p>
+              <button class="btn btn-sm btn-order" onclick="openMenuModal('nonveg')">View Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Bread -->
+        <div class="menu-card" data-category="bread">
+          <div class="menu-card-inner">
+            <img src="./images/menu/bread_cover.jpg" alt="Bread" />
+            <video autoplay muted loop playsinline>
+              <source src="./images/menu/bread_cover1.mp4" type="video/mp4" />
+            </video>
+            <div class="menu-card-overlay">
+              <span class="menu-card-label">Bread</span>
+              <p>Freshly baked breads, rotis & parathas daily</p>
+              <button class="btn btn-sm btn-order" onclick="openMenuModal('bread')">View Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Dessert -->
+        <div class="menu-card" data-category="dessert">
+          <div class="menu-card-inner">
+            <img src="./images/menu/dessert_cover.jpg" alt="Dessert" />
+            <video autoplay muted loop playsinline>
+              <source src="./images/menu/dessert_cover1.mp4" type="video/mp4" />
+            </video>
+            <div class="menu-card-overlay">
+              <span class="menu-card-label">Dessert</span>
+              <p>Indulgent sweets crafted by our pastry chefs</p>
+              <button class="btn btn-sm btn-order" onclick="openMenuModal('dessert')">View Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Drinks -->
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-card-inner">
+            <img src="./images/menu/drink_cover.jpg" alt="Drinks" />
+            <video autoplay muted loop playsinline>
+              <source src="./images/menu/drink_cover1.mp4" type="video/mp4" />
+            </video>
+            <div class="menu-card-overlay">
+              <span class="menu-card-label">Drinks</span>
+              <p>Refreshing beverages to quench your thirst</p>
+              <button class="btn btn-sm btn-order" onclick="openMenuModal('drinks')">View Menu</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU MODAL -->
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content menu-modal-content">
+        <div class="modal-header menu-modal-header">
+          <h5 class="modal-title" id="menuModalTitle">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4" id="menuItemsGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== OFFERS SECTION ===== -->
+  <section id="offers" class="offers-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Limited Time</span>
+        <h2 class="section-title">Hot <span class="orange">Offers</span></h2>
+      </div>
+
+      <div class="row g-4 align-items-start">
+
+        <!-- Left: Big Combo Video -->
+        <div class="col-md-6">
+          <div class="offers-main-video">
+            <video autoplay muted loop playsinline>
+              <source src="assets/videos/combo-main.mp4" type="video/mp4" />
+            </video>
+            <div class="offers-main-fallback"></div>
+            <div class="offers-main-overlay">
+              <h3>Best Combo Offer</h3>
+              <p>Pizza + Cold Drink</p>
+              <span class="offers-badge">Save 40%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Heading + 3 Cards -->
+        <div class="col-md-6">
+          <h3 class="offers-heading">Trending Food Combo Offers</h3>
+          <p class="offers-subheading">Save up to 50% on our best combos!</p>
+
+          <!-- Combo Card 1 -->
+          <div class="combo-card">
+            <div class="combo-video-thumb">
+              <video autoplay muted loop playsinline>
+                <source src="assets/videos/combo-chicken.mp4" type="video/mp4" />
+              </video>
+              <div class="combo-thumb-fallback" style="background:#FF7A00;"></div>
+              <span class="combo-emoji">🍗</span>
+            </div>
+            <div class="combo-info">
+              <div class="d-flex gap-2 mb-1">
+                <span class="combo-tag">Chicken</span>
+                <span class="combo-discount">30% OFF</span>
+              </div>
+              <p>4 pcs Hot Crispy Chicken + 4 pcs Wings</p>
+              <button class="btn btn-sm btn-order">Grab Deal</button>
+            </div>
+          </div>
+
+          <!-- Combo Card 2 -->
+          <div class="combo-card">
+            <div class="combo-video-thumb">
+              <video autoplay muted loop playsinline>
+                <source src="assets/videos/combo-pizza.mp4" type="video/mp4" />
+              </video>
+              <div class="combo-thumb-fallback" style="background:#1F1F1F;"></div>
+              <span class="combo-emoji">🍕</span>
+            </div>
+            <div class="combo-info">
+              <div class="d-flex gap-2 mb-1">
+                <span class="combo-tag">Pizza</span>
+                <span class="combo-discount">20% OFF</span>
+              </div>
+              <p>1 Pizza + 1 Large Drink</p>
+              <button class="btn btn-sm btn-order">Grab Deal</button>
+            </div>
+          </div>
+
+          <!-- Combo Card 3 -->
+          <div class="combo-card">
+            <div class="combo-video-thumb">
+              <video autoplay muted loop playsinline>
+                <source src="assets/videos/combo-burger.mp4" type="video/mp4" />
+              </video>
+              <div class="combo-thumb-fallback" style="background:#FF4D4D;"></div>
+              <span class="combo-emoji">🍔</span>
+            </div>
+            <div class="combo-info">
+              <div class="d-flex gap-2 mb-1">
+                <span class="combo-tag">Burger</span>
+                <span class="combo-discount">50% OFF</span>
+              </div>
+              <p>2 pc Hamburger + 1 Drink + Sauce</p>
+              <button class="btn btn-sm btn-order">Grab Deal</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHEFS SECTION ===== -->
+  <section id="chefs" class="chefs-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Meet The Team</span>
+        <h2 class="section-title">Our <span class="orange">Expert Chefs</span></h2>
+        <p class="section-subtitle">Culinary masters behind every unforgettable bite</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-3 col-6">
+          <div class="chef-card">
+            <img src="./images/chef1.jpg" alt="Chef Arjun Sharma" />
+            <div class="chef-overlay">
+              <h5>Chef Arjun Sharma</h5>
+              <p><i class="fa-solid fa-star me-1"></i>12 Years Experience</p>
+              <p><i class="fa-solid fa-fire me-1"></i>North Indian, Tandoori, Grills</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="chef-card">
+            <img src="./images/chef2.avif" alt="Chef Priya Nair" />
+            <div class="chef-overlay">
+              <h5>Chef Priya Nair</h5>
+              <p><i class="fa-solid fa-star me-1"></i>8 Years Experience</p>
+              <p><i class="fa-solid fa-fire me-1"></i>South Indian, Biryani, Curries</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="chef-card">
+            <img src="./images/chef3.jpg" alt="Chef Rohan Mehta" />
+            <div class="chef-overlay">
+              <h5>Chef Rohan Mehta</h5>
+              <p><i class="fa-solid fa-star me-1"></i>10 Years Experience</p>
+              <p><i class="fa-solid fa-fire me-1"></i>Continental, Pizza, Pasta</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="chef-card">
+            <img src="./images/chef4.jpg" alt="Chef Sunita Yadav" />
+            <div class="chef-overlay">
+              <h5>Chef Sunita Yadav</h5>
+              <p><i class="fa-solid fa-star me-1"></i>6 Years Experience</p>
+              <p><i class="fa-solid fa-fire me-1"></i>Desserts, Bakery, Mithai</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS SECTION ===== -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our <span class="orange">Customers Say</span></h2>
+      </div>
+
+      <div class="reviews-slider-wrapper">
+        <button class="review-arrow review-prev" id="reviewPrev"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="reviews-track" id="reviewsTrack">
+
+          <div class="review-card active">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Best food delivery in the area! Always on time and the food tastes amazing. Much
+              better than Zomato!"</p>
+            <div class="review-author">
+              <img src="./images/client1.jpg" alt="Rahul Verma" />
+              <div>
+                <strong>Rahul Verma</strong>
+                <span>Loyal Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"TastyAdda has the crispiest chicken I've ever tasted. Great prices and fast
+              delivery!"</p>
+            <div class="review-author">
+              <img src="./images/client2.jpg" alt="Priya Singh" />
+              <div>
+                <strong>Priya Singh</strong>
+                <span>Regular Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+            <p class="review-text">"Really happy with the service. The burger combo is worth every rupee. Will order
+              again!"</p>
+            <div class="review-author">
+              <img src="./images/client3.jpg" alt="Ankit Gupta" />
+              <div>
+                <strong>Ankit Gupta</strong>
+                <span>Happy Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Love the variety and the food quality. The desserts are absolutely divine!"</p>
+            <div class="review-author">
+              <img src="./images/client4.jpg" alt="Neha Kapoor" />
+              <div>
+                <strong>Neha Kapoor</strong>
+                <span>Food Lover</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="review-arrow review-next" id="reviewNext"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Dots -->
+      <div class="review-dots" id="reviewDots">
+        <span class="review-dot active" data-index="0"></span>
+        <span class="review-dot" data-index="1"></span>
+        <span class="review-dot" data-index="2"></span>
+        <span class="review-dot" data-index="3"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Visual Feast</span>
+        <h2 class="section-title">Food <span class="orange">Gallery</span></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="./images/gallery1.jpg" alt="Juicy burger" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item tall"><img src="./images/gallery2.jpg" alt="Pizza" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item"><img src="./images/gallery3.jpg" alt="Crispy chicken" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item"><img src="./images/gallery4.jpg" alt="Fresh salad" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item tall"><img src="./images/gallery5.jpg" alt="Noodles" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item"><img src="./images/gallery6.jpg" alt="Dessert" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item"><img src="./images/gallery7.jpg" alt="Fresh drinks" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item"><img src="./images/gallery8.jpg" alt="Curry" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="gallery-item"><img src="./images/gallery9.jpg" alt="Fresh bread" />
+          <div class="gallery-hover"><i class="fa-solid fa-eye"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Reach Us</span>
+        <h2 class="section-title">Get In <span class="orange">Touch</span></h2>
+      </div>
+
+      <div class="row g-5">
+
+        <!-- Left: Map -->
+        <div class="col-md-6">
+          <h4 class="contact-map-heading"><i class="fa-solid fa-location-dot me-2"></i>Find Us Here</h4>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9!2d77.2273!3d28.6292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="TastyAdda Location">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="col-md-6">
+          <div class="contact-form-card">
+            <h4 class="contact-form-heading">Send Us a Message</h4>
+            <div id="contactForm">
+              <div class="mb-3">
+                <input type="text" class="form-control contact-input" id="contactName"
+                  placeholder="Enter your full name" required />
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control contact-input" id="contactPhone"
+                  placeholder="Enter your mobile number" required />
+                <div class="invalid-feedback">Please enter your mobile number.</div>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control contact-input" id="contactAddress" rows="3"
+                  placeholder="Enter your delivery address" required></textarea>
+                <div class="invalid-feedback">Please enter your delivery address.</div>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control contact-input" id="contactEmail"
+                  placeholder="Enter your email (optional)" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control contact-input" id="contactMessage" rows="3"
+                  placeholder="Any special instructions?"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary-orange w-100" id="submitContact">
+                Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+              </button>
+              <div id="formSuccess" class="form-success-msg d-none">
+                <i class="fa-solid fa-circle-check me-2"></i>Message sent! We'll contact you shortly.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Left: Quick Links -->
+        <div class="col-md-4 col-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#about"><i class="fa-solid fa-chevron-right me-1"></i>About Us</a></li>
+            <li><a href="#menu"><i class="fa-solid fa-chevron-right me-1"></i>Menu</a></li>
+            <li><a href="#offers"><i class="fa-solid fa-chevron-right me-1"></i>Offers</a></li>
+            <li><a href="#chefs"><i class="fa-solid fa-chevron-right me-1"></i>Our Chefs</a></li>
+            <li><a href="#reviews"><i class="fa-solid fa-chevron-right me-1"></i>Reviews</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right me-1"></i>Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Center: Logo + Social -->
+        <div class="col-md-4 col-12 text-center">
+          <div class="footer-brand">
+            <svg width="60" height="60" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+              <rect width="50" height="50" rx="12" fill="#FF7A00" />
+              <circle cx="25" cy="20" r="9" fill="white" opacity="0.9" />
+              <path d="M19 20 Q25 14 31 20" stroke="white" stroke-width="2" fill="none" />
+              <rect x="18" y="30" width="14" height="3" rx="1.5" fill="white" />
+              <rect x="20" y="34" width="10" height="3" rx="1.5" fill="white" opacity="0.7" />
+              <circle cx="22" cy="20" r="1.5" fill="#FF7A00" />
+              <circle cx="28" cy="20" r="1.5" fill="#FF7A00" />
+            </svg>
+            <h4>TastyAdda</h4>
+            <p class="footer-tagline"><em>Fast. Fresh. Affordable.</em></p>
+          </div>
+          <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
+                class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="col-md-4 col-6">
+          <h6 class="footer-heading">Contact Us</h6>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>+91 91234 56789</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>hello@tastyadda.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>123, Food Street, MG Road, New Delhi – 110001,
+                India</span></li>
+            <li><i class="fa-solid fa-clock"></i><span>Mon–Sun: 10:00 AM – 11:00 PM</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2024 TastyAdda. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
